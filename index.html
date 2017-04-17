@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Zluneva_S_12.04_FSTK</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+		<div class="anketa">
+			Шановний учаснику конкурсу «Вчитель-новатор»!
+			Заповніть, будь ласка, реєстраційну анкету українською мовою.
+			Прохання надати повну відповідь на всі поставлені запитання.
+			Якщо ви подаєте декілька конкурсних робіт, будь ласка,
+			заповніть дану анкету для кожної конкурсної роботи окремо.
+			Дякуємо Вам за участь у конкурсі та бажаємо успіхів!
+		</div>
+		<form method="POST" id="form">
+			<div class="input-box">
+				<div class="input-text">Призвiще :</div>
+				<input name='surname' type='text'/>
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Ім’я та по-батькові :</div>
+				<input name='name' type='text'/>
+			</div>
+			<div class="input-box">
+				<div class="input-text">Назва конкурсної роботи :</div>
+				<input name='work' type='text'/>
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Номінація конкурсної роботи :</div>
+				<select name="work" form="form">
+					<option value="1">Навчальний проект</option>
+					<option selected value="2">Виховний проект</option>
+					<option value="3">Позашкільний проект</option>
+					<option value="4">Навчальний контент</option>
+					<option value="5">Он-лайновий освітній ресурс</option>
+					<option value="6">Навчально-методичне забезпечення</option>
+				</select>
+			</div>
+			<div class="input-box">
+				<div class="input-text">Навчальна дисципліна :</div>
+				<input name='work_dis' type='text' placeholder="(наприклад, біологія)" />
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Чи була апробована ваша робота? :</div>
+				<div class="vibor">
+					<input type="radio" name="work_answer" value="yes" id="work_ans1">
+					<label for="work_ans1">Так </label>
+					<input type="radio" name="work_answer" value="no" id="work_ans2">
+					<label for="work_ans2">Ні</label>
+				</div>				
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Якщо так, то на якому рівні? :</div>
+				<input name='work_uroven' type='text'/>
+			</div>
+			<div class="input-box">
+				<div class="input-text">Повна назва установи, де ви працюєте :</div>
+				<input name='work_name' type='text'/>
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Ваша посада :</div>
+				<input name='work_dolg' type='text'/>
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Місто/населений пункт :</div>
+				<input name='sity' type='text'/>
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Область :</div>
+				<select name="work" form="form">
+					<option value="obl1">Автономна республіка Крим</option>
+					<option value="obl2">Вінницька область</option>
+					<option value="obl3">Волинська область</option>
+					<option value="obl4">Дніпропетровська область</option>
+					<option value="obl5">Донецька область</option>
+					<option value="obl6">Житомирська область</option>
+					<option value="obl7">Закарпатська область</option>
+					<option value="obl8">Запорізька область </option>
+					<option value="obl9">Івано-Франківська область</option>
+					<option selected value="obl">Київська область</option>
+					<option value="obl10">Кіровоградська область</option>
+					<option value="obl11">Луганська область</option>
+					<option value="obl12">Львівська область </option>
+					<option value="obl13">Миколаївська область</option>
+					<option value="obl14">Одеська область </option>
+					<option value="obl15">Полтавська область</option>
+					<option value="obl16">Рівненська область</option>
+					<option value="obl17">Сумська область </option>
+					<option value="obl18">Тернопільська область</option>
+					<option value="obl19">Харківська область</option>
+					<option value="obl20">Херсонська область</option>
+					<option value="obl21">Хмельницька область </option>
+					<option value="obl22">Черкаська область </option>
+					<option value="obl23">Чернівецька область</option>
+					<option value="obl24">Чернігівська область</option>
+					<option value="obl25">м. Київ</option>
+					<option value="obl26">м.Севастополь</option>
+				</select>
+			</div>
+			<div class="input-box">
+				<div class="input-text">Мобільний телефон :</div>
+				<input name='tel' type='tel'/>
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Електронна пошта :</div>
+				<input name='email' type='email'/>
+			</div>	
+			<div class="input-box">
+				<div class="input-text">Ви брали участь у попередніх конкурсах  «Вчитель-новатор»? :</div>
+				<div class="vibor">
+					<input type="radio" name="work_answer2" value="yes" id="work_answer1">
+					<label for="work_answer1">Так </label>
+					<input type="radio" name="work_answer2" value="no" id="work_answer2">
+					<label for="work_answer2">Ні</label>
+				</div>				
+			</div>
+			<div class="input-box">
+				<div class="input-text">Якщо так,  то вкажіть, коли саме :</div>
+				<input name='date' type='date'/>
+			</div>
+			<div class="input-box input-box-left">
+				<div class="input-text">Яким чином ви дізналися про конкурс «Вчитель-новатор»? (на вибір, можна декілька варіантів)</div>
+				<div class="check-box">	
+					<div class="check"><input type="checkbox" id="ch1"/><label for="ch1">Сайт МОН молодьспорту</label></div>
+					<div class="check"><input type="checkbox" id="ch1"/><label for="ch1">Сайт МОН молодьспорту</label></div>
+					<div class="check"><input type="checkbox" id="ch2"/><label for="ch2">Сайт Майкрософт Україна</label></div>
+					<div class="check"><input type="checkbox" id="ch3"/><label for="ch3">Сайт Мережі «Партнерство в навчанні»</label></div>
+					<div class="check"><input type="checkbox" id="ch4"/><label for="ch4">Обласний ІППО</label></div>
+					<div class="check"><input type="checkbox" id="ch5"/><label for="ch5">Обласне управління освіти</label></div>
+					<div class="check"><input type="checkbox" id="ch6"/><label for="ch6">Міське управління освіти</label></div>
+					<div class="check"><input type="checkbox" id="ch7"/><label for="ch7">Osvita.com</label></div>
+					<div class="check"><input type="checkbox" id="ch8"/><label for="ch8">Gurt.org.ua</label></div>
+					<div class="else"><input name='text-checkbox' type='text' placeholder="інше" /></div>				
+				</div>
+			</div>
+			<div class="zgoda">
+				<input type="checkbox" id="zg"  required/>
+				<label for="zg">Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності </label>
+			</div>
+			<div class="sub_res">
+				<input type="submit" value="Подати анкету">
+				<input type="reset" value="Заповнити знову">
+			</div>
+			
+				
+
+			
+			
+			
+			</div>
+			
+				
+		</form>
+			
+		</div>		
+	</body>
+</html>
